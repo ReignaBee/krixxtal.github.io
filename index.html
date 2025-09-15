@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Krystal Karen Peteros - Personal Website and Computer Science Portfolio" />
+  <meta name="keywords" content="Krystal Karen Peteros, Computer Science, Portfolio, Programming, Projects" />
+  <meta name="author" content="Krystal Karen Peteros" />
+  <link rel="stylesheet" href="krkr.css">
+  <title>Me & Computer Science</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+</head>
+<body> 
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+      <section id="home">
+        <h1>Come And Join Me!</h1>
+        <p>Brief explanation about computer science and the possible jobs in this field.</p>
+      </section>
+      
+      <section id="compsci">
+        <h2>What is Computer Science?</h2>
+        <p>Computer science is the study of computers and computational systems, including their principles, hardware, software, and applications. It's a multidisciplinary field that combines theory and practice to solve complex problems.</p>
+        <p>Key areas of computer science include:</p>
+        <ul>
+          <li><i class="fas fa-microchip icon"></i><strong>Algorithms & Data Structures:</strong> Efficient problem-solving methods</li>
+          <li><i class="fas fa-laptop-code icon"></i><strong>Software Development:</strong> Creating applications and systems</li>
+          <li><i class="fas fa-brain icon"></i><strong>Artificial Intelligence:</strong> Developing intelligent systems</li>
+          <li><i class="fas fa-shield-alt icon"></i><strong>Cybersecurity:</strong> Protecting digital information</li>
+          <li><i class="fas fa-network-wired icon"></i><strong>Networking:</strong> Connecting computers and devices</li>
+        </ul>
+      </section>
+      
+      <section id="career">
+        <h2>Career Paths in Computer Science</h2>
+        <p>The field of computer science offers diverse career opportunities across various industries. Here are some exciting paths:</p>
+        
+        <div class="career-grid">
+          <div class="career-card">
+            <h3><i class="fas fa-code icon"></i>Software Developer</h3>
+            <p>Design, develop, and test computer applications and systems. Work on everything from mobile apps to enterprise software.</p>
+          </div>
+          
+          <div class="career-card">
+            <h3><i class="fas fa-robot icon"></i>AI Engineer</h3>
+            <p>Develop intelligent systems using machine learning and artificial intelligence techniques to solve complex problems.</p>
+          </div>
+          
+          <div class="career-card">
+            <h3><i class="fas fa-shield-alt icon"></i>Information Security Analyst</h3>
+            <p>Protect organizations' computer systems and networks from cyber threats and ensure data privacy.</p>
+          </div>
+          
+          <div class="career-card">
+            <h3><i class="fas fa-chalkboard-teacher icon"></i>Computer Science Teacher</h3>
+            <p>Educate the next generation of computer scientists and share knowledge about technology.</p>
+          </div>
+          
+          <div class="career-card">
+            <h3><i class="fas fa-tasks icon"></i>Technical Project Manager</h3>
+            <p>Lead software development projects and coordinate teams to deliver successful technology solutions.</p>
+          </div>
+          
+          <div class="career-card">
+            <h3><i class="fas fa-gamepad icon"></i>Game Developer</h3>
+            <p>Create interactive games for various platforms using programming skills and creative design.</p>
+          </div>
+          <div class="career-card">
+            <h3><i class="fas fa-gamepad icon"></i>Database Administrator</h3>
+            <p>Manages and maintains databases to ensure data security, integrity, and availability.</p>
+          </div>
+          <div class="career-card">
+          <h3><i class="fas fa-gamepad icon"></i>Web Developer</h3>
+            <p>Develops websites and web applications using front-end and back-end technologies.</p>
+          </div>
+          <div class="career-card">
+          <h3><i class="fas fa-gamepad icon"></i>Network Engineer</h3>
+            <p>Designs, implements, and maintains computer networks such as LAN, WAN, and intranet.</p>
+          </div>
+
+          <div class="career-card">
+          <h3><i class="fas fa-gamepad icon"></i>Cloud Engineer</h3>
+            <p>Designs and manages cloud infrastructure and services on platforms like AWS, Azure, or Google Cloud.</p>
+          </div>
+          
+        </div>
+
+      </section>
+      
+      <section id="salary">
+        <h2>Computer Science Careers in the Philippines</h2>
+        <p>The technology sector in the Philippines continues to grow, offering promising career opportunities for computer science graduates.</p>
+        
+        <div class="salary-highlight">
+          <h3>Salary Information</h3>
+          <p>The average computer scientist in the Philippines earns approximately <strong>₱891,500</strong> per year, with an hourly rate of around <strong>₱429</strong>. Entry-level positions start at <strong>₱630,261</strong>, while experienced professionals can earn up to <strong>₱1,116,907</strong>.</p>
+          <p>Salary potential is expected to grow by <strong>13% over 5 years</strong>, reaching an estimated <strong>₱1,003,740 by 2030</strong>.</p>
+        </div>
+        
+        <p style="margin-top: 1rem; font-size: 0.9rem;"><i>Content last modified on September 8, 2025.</i></p>
+      </section>
+
+       <section id="contact">
+  <h2>CONTACT ME</h2>
+  <div class="contact-row">
+    <p class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:doublek1808@gmail.com">doublek1808@gmail.com</a></p>
+    <p class="contact-item"><i class="fas fa-phone"></i><a href="tel:09602562402">+63 960 256 2402</a></p>
+  </div>
+</section>
+  </main>
+    
+    <footer>
+      <p>&copy; 2025 Website Project | Created by Krystal Karen Peteros</p>
+    </footer>
+  </div>
+  
+  <script>
+    // Simple animation for sections when they come into view
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('section');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      sections.forEach(section => {
+        section.style.opacity = 0;
+        section.style.transition = 'opacity 0.5s ease-in-out';
+        observer.observe(section);
+      });
+    });
+  </script>
+</body>
+</html>
