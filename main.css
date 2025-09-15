@@ -182,4 +182,22 @@ footer {
   font-size: 0.9rem;
   border-bottom: 4px solid #a3c4bc; /* mas common ang border-top sa footer */
   margin-top: 2rem; /* space mula sa content sa itaas */
+
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 8px 0;
+  }
+  .contact-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 0 10px;
+  }
 }
